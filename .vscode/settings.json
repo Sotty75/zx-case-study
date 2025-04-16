@@ -1,0 +1,9 @@
+{
+    "dezog.path": "fuse",
+    "dezog.emulatorArgs": ["--no-sound", "--machine", "48"],
+    "dezog.port": 8432,
+    "dezog.rootFolder": "${workspaceFolder}",
+    "files.associations": {
+        "*.asm": "z80-asm"
+    }
+}

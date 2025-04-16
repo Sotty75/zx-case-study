@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "dezog",
+            "request": "launch",
+            "name": "Internal Simulator",
+            "remoteType": "zsim",
+            "zsim": {
+                "preset": "spectrum",
+                "memoryModel": "ZX48K"
+            },
+            "sjasmplus": [
+                {
+                    "path": "sld/symbols.sld"
+                }
+            ],
+            "history": {
+                "reverseDebugInstructionCount": 1000000,
+                "spotCount": 10,
+                "codeCoverageEnabled": true
+            },
+            "startAutomatically": false,
+            "commandsAfterLaunch": [
+            ],
+            "rootFolder": "${workspaceFolder}",
+            // "topOfStack": "stack_top",
+            // "load": "for-loop.sna",
+            // "load": "if-else.sna",
+            // "load": "main.tap",
+            // "load": "indirizzamento.sna",
+            // "load": "sna/fill-screen.sna",
+            "load": "sna/set-pixel.sna",
+            "smallValuesMaximum": 513,
+            "tmpDir": ".tmp"
+        },
+    ]
+}

@@ -1,0 +1,17 @@
+# Ignore temporary and list files
+*.list
+*.tmp
+
+# Ignore build artifacts
+build/
+*.sna
+
+# Ignore debugging and symbol files
+*.sld
+*.sym
+*.map
+*.dbg
+
+# Optional: ignore backup files
+*~
+*.bak
