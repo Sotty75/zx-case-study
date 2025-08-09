@@ -62,7 +62,7 @@ TEST_03:
 ;       counts the position using [x0,x1,x2] to identify which point in the target address to highlight
 ;       
 ;       H Reginster
-;       [y7,y6] are defining which block of the three main blocks we are using (00,01,02) => H {%010[00]}... {%010[01]...} {%010[10]...}   {$40} {48} {50}
+;       [y7,y6] are defining which block of the three main blocks we are using (00,01,10) => H {%010[00]}... {%010[01]...} {%010[10]...}   {$40} {48} {50}
 ;       [y2,y1,y0] are defining which row inside of a character we are using, rangin from 0 to 7
 ;       
 ;       L Register
