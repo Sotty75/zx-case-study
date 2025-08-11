@@ -18,18 +18,12 @@ START
     LD (HL), $F7
 
     ; Backup memory address to swap into registers B, C
-    LD HL, $E070
-    LD B, (HL)
-    LD HL, $E040
-    LD C, (HL)
-    
-    ; Swap on memory
-    LD HL, $E070
-    LD (HL), C
-    LD HL, $E040
-    LD (HL), B
-
-    
+    LD A, ($E070)
+    EX AF
+    LD A, ($E040)
+    LD ($E070), A
+    EX AF
+    LD ($E040), A
     
 LOOP:
     jp LOOP        ; Loop infinito
