@@ -30,7 +30,7 @@
             // "load": "main.tap",
             // "load": "indirizzamento.sna",
             // "load": "sna/fill-screen.sna",
-            "load": "sna/set-pixel.sna",
+            "load": "sna/snapshot.sna",
             "smallValuesMaximum": 513,
             "tmpDir": ".tmp"
         },

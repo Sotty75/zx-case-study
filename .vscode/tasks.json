@@ -2,14 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build ASM file",
             "type": "shell",
-            "command": "sjasmplus --sld=sld\\symbols.sld --fullpath set-pixel.asm",
+            "command": "sjasmplus --sld=sld\\symbols.sld --fullpath \"${file}\"",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": []
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         }
     ]
 }

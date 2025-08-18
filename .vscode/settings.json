@@ -4,6 +4,13 @@
     "dezog.port": 8432,
     "dezog.rootFolder": "${workspaceFolder}",
     "files.associations": {
-        "*.asm": "z80-asm"
-    }
-}
+      "*.asm": "z80-asm"
+    },
+    "[z80-asm]": {
+      "editor.suggestOnTriggerCharacters": false,
+      "editor.parameterHints.enabled": false
+    },
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.showWords": false
+  }
+  
