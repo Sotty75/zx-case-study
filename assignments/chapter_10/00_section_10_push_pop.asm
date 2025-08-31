@@ -37,6 +37,22 @@ use_case_03_exchange:
     POP BC
     POP DE
 
+illustrative_01:
+    ; 1. Clear  the  accumulator  and  all  the  flags. 
+    ; 2. Load  FFh  into  the  accumulator,  increment  the  contents  of  the  accumulator,  and  display 
+    ; how  the  S,  Z,  and  CY  flags  are  affected  by  the  increment  instruction. 
+
+    XOR A
+    LD SP, $FFFF
+    LD DE, $0000
+    LD A, $FF
+    INC A
+    PUSH AF
+    POP DE
+    LD A, E
+    AND $C1
+    OUT ($FE), A
+
 loop:
     JP loop
 
