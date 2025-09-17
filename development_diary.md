@@ -14,5 +14,6 @@ Still to come:
 
 ## September 17, 2025
 
-Did some additional excercises on the push and pop instructions.
+Did some additional excercises on the push and pop instructions from chapter 10. 
+Exercises: 03 - 04 - 05.
 
